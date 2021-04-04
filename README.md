@@ -100,6 +100,11 @@ git pull <관리명> <해당 브랜치> --allow-unrelated-histories
 git push <관리명> <해당 브랜치>
 ```
 
+원격 저장소에 강제적으로 올리기
+```git
+git push <관리명> +<해당 브랜치>
+```
+
 원격 저장소에 브랜치 삭제하기
 ```git
 git push <관리명> -d <해당 브랜치>
