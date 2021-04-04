@@ -15,7 +15,12 @@ git config --global user.email <이메일>
 ```
 
 ## 저장소 생성과 커밋
-레파지토리 깃 초기화
+저장소 복제 ( 원격 경로 입력시 remote origin 자동 추가 )
+```git
+git clone <로컬 및 원격 경로>
+```
+
+깃 레파지토리 초기화
 ```git
 git init
 ```
@@ -36,14 +41,19 @@ git commit -m <메세지>
 ```
 
 ## 브랜치
-현재 레파지토리에 있는 브랜치 확인
+브랜치 확인
 ```git
 git branch
 ```
 
-새로운 브랜치 생성
+브랜치 생성
 ```git
 git branch <브랜치명>
+```
+
+브랜치 삭제
+```git
+git branch -d <브랜치명>
 ```
 
 현재 사용중인 브랜치 변경
@@ -60,3 +70,27 @@ git merge <특정 브랜치명>
 
 
 ## 원격 저장소
+원격 저장소 확인
+```git
+git remote
+```
+
+원격 저장소 관리 추가
+```git
+git remote add <관리명> <원격 저장소 주소>
+```
+
+원격 저장소 관리 삭제
+```git
+git remote remove <관리명>
+```
+
+원격 저장소 가져와서 로컬과 병합
+```git
+git pull <관리명> <해당 브랜치>
+```
+
+원격 저장소와 전혀 관련 기록이 없는 로컬과 병합
+```git
+git pull <관리명> <해당 브랜치> --allow-unrelated-histories
+```
