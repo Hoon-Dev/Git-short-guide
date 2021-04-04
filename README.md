@@ -15,7 +15,7 @@ git config --global user.email <이메일>
 ```
 
 ## 저장소 생성과 커밋
-저장소 복제 ( 원격 경로 입력시 remote origin 자동 추가 )
+저장소 복제 **( 원격 경로 입력시 remote origin 자동 추가 )**
 ```git
 git clone <로컬 및 원격 경로>
 ```
