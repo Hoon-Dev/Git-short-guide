@@ -14,7 +14,7 @@ git config --gloabl user.name <이름>
 git config --global user.email <이메일>
 ```
 
-## 저장소 생성과 커밋
+## 저장소 관리와 커밋
 저장소 복제 **( 원격 경로 입력시 remote origin 자동 추가 )**
 ```git
 git clone <로컬 및 원격 경로>
@@ -38,6 +38,11 @@ git add <파일명>
 커밋 **( -m 옵션 없으면 vim으로 메세지 작성 )**
 ```git
 git commit -m <메세지>
+```
+
+파일 삭제 **( --cached 옵션 넣으면 로컬 저장소는 삭제 안함 )**
+```git
+git rm <파일명>
 ```
 
 ## 브랜치
